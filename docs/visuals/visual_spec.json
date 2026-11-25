@@ -1,0 +1,525 @@
+{
+  "diagrams": [
+    {
+      "width": 1120,
+      "height": 630,
+      "title": "AnyNet256: spatial features to one tumor score",
+      "description": "Three convolutional blocks followed by a regularized fully connected head.",
+      "filename": "architecture.svg",
+      "elements": [
+        {
+          "kind": "text",
+          "x": 40,
+          "y": 42,
+          "text": "BRAIN MRI / MODEL ARCHITECTURE",
+          "font_size": 13,
+          "fill": "#0f766e",
+          "font_weight": 700
+        },
+        {
+          "kind": "text",
+          "x": 40,
+          "y": 84,
+          "text": "AnyNet256: spatial features to one tumor score",
+          "font_size": 29,
+          "fill": "#0f172a",
+          "font_weight": 700
+        },
+        {
+          "kind": "text",
+          "x": 40,
+          "y": 116,
+          "text": "Three convolutional blocks followed by a regularized fully connected head.",
+          "font_size": 16,
+          "fill": "#475569",
+          "font_weight": 400
+        },
+        {
+          "kind": "rect",
+          "x": 40,
+          "y": 250,
+          "width": 170,
+          "height": 86,
+          "rx": 12,
+          "fill": "#eaf5f2",
+          "stroke": "#cbd5e1",
+          "stroke_width": 1
+        },
+        {
+          "kind": "rect",
+          "x": 40,
+          "y": 262,
+          "width": 4,
+          "height": 62,
+          "fill": "#0f766e",
+          "rx": 2
+        },
+        {
+          "kind": "text",
+          "x": 57,
+          "y": 277,
+          "text": "RGB input",
+          "font_size": 17,
+          "fill": "#0f172a",
+          "font_weight": 700
+        },
+        {
+          "kind": "text",
+          "x": 57,
+          "y": 300,
+          "text": "3 × 256 × 256",
+          "font_size": 13,
+          "fill": "#475569",
+          "font_weight": 400
+        },
+        {
+          "kind": "path",
+          "d": "M210,293 L260,293",
+          "fill": "none",
+          "stroke": "#64748b",
+          "stroke_width": 1.8,
+          "marker_end": "url(#arrow)"
+        },
+        {
+          "kind": "rect",
+          "x": 93,
+          "y": 175,
+          "width": 54,
+          "height": 54,
+          "rx": 3,
+          "fill": "#e8eef8",
+          "stroke": "#849bc0",
+          "stroke_width": 1
+        },
+        {
+          "kind": "rect",
+          "x": 260,
+          "y": 250,
+          "width": 170,
+          "height": 86,
+          "rx": 12,
+          "fill": "#efedf8",
+          "stroke": "#cbd5e1",
+          "stroke_width": 1
+        },
+        {
+          "kind": "rect",
+          "x": 260,
+          "y": 262,
+          "width": 4,
+          "height": 62,
+          "fill": "#6860a5",
+          "rx": 2
+        },
+        {
+          "kind": "text",
+          "x": 277,
+          "y": 277,
+          "text": "Conv block 1",
+          "font_size": 17,
+          "fill": "#0f172a",
+          "font_weight": 700
+        },
+        {
+          "kind": "text",
+          "x": 277,
+          "y": 300,
+          "text": "32 × 128 × 128",
+          "font_size": 13,
+          "fill": "#475569",
+          "font_weight": 400
+        },
+        {
+          "kind": "path",
+          "d": "M430,293 L480,293",
+          "fill": "none",
+          "stroke": "#64748b",
+          "stroke_width": 1.8,
+          "marker_end": "url(#arrow)"
+        },
+        {
+          "kind": "rect",
+          "x": 313,
+          "y": 175,
+          "width": 54,
+          "height": 54,
+          "rx": 3,
+          "fill": "#e8eef8",
+          "stroke": "#849bc0",
+          "stroke_width": 1
+        },
+        {
+          "kind": "rect",
+          "x": 308,
+          "y": 180,
+          "width": 54,
+          "height": 54,
+          "rx": 3,
+          "fill": "#e8eef8",
+          "stroke": "#849bc0",
+          "stroke_width": 1
+        },
+        {
+          "kind": "rect",
+          "x": 480,
+          "y": 250,
+          "width": 170,
+          "height": 86,
+          "rx": 12,
+          "fill": "#efedf8",
+          "stroke": "#cbd5e1",
+          "stroke_width": 1
+        },
+        {
+          "kind": "rect",
+          "x": 480,
+          "y": 262,
+          "width": 4,
+          "height": 62,
+          "fill": "#6860a5",
+          "rx": 2
+        },
+        {
+          "kind": "text",
+          "x": 497,
+          "y": 277,
+          "text": "Conv block 2",
+          "font_size": 17,
+          "fill": "#0f172a",
+          "font_weight": 700
+        },
+        {
+          "kind": "text",
+          "x": 497,
+          "y": 300,
+          "text": "64 × 64 × 64",
+          "font_size": 13,
+          "fill": "#475569",
+          "font_weight": 400
+        },
+        {
+          "kind": "path",
+          "d": "M650,293 L700,293",
+          "fill": "none",
+          "stroke": "#64748b",
+          "stroke_width": 1.8,
+          "marker_end": "url(#arrow)"
+        },
+        {
+          "kind": "rect",
+          "x": 533,
+          "y": 175,
+          "width": 54,
+          "height": 54,
+          "rx": 3,
+          "fill": "#e8eef8",
+          "stroke": "#849bc0",
+          "stroke_width": 1
+        },
+        {
+          "kind": "rect",
+          "x": 528,
+          "y": 180,
+          "width": 54,
+          "height": 54,
+          "rx": 3,
+          "fill": "#e8eef8",
+          "stroke": "#849bc0",
+          "stroke_width": 1
+        },
+        {
+          "kind": "rect",
+          "x": 523,
+          "y": 185,
+          "width": 54,
+          "height": 54,
+          "rx": 3,
+          "fill": "#e8eef8",
+          "stroke": "#849bc0",
+          "stroke_width": 1
+        },
+        {
+          "kind": "rect",
+          "x": 700,
+          "y": 250,
+          "width": 170,
+          "height": 86,
+          "rx": 12,
+          "fill": "#efedf8",
+          "stroke": "#cbd5e1",
+          "stroke_width": 1
+        },
+        {
+          "kind": "rect",
+          "x": 700,
+          "y": 262,
+          "width": 4,
+          "height": 62,
+          "fill": "#6860a5",
+          "rx": 2
+        },
+        {
+          "kind": "text",
+          "x": 717,
+          "y": 277,
+          "text": "Conv block 3",
+          "font_size": 17,
+          "fill": "#0f172a",
+          "font_weight": 700
+        },
+        {
+          "kind": "text",
+          "x": 717,
+          "y": 300,
+          "text": "128 × 32 × 32",
+          "font_size": 13,
+          "fill": "#475569",
+          "font_weight": 400
+        },
+        {
+          "kind": "path",
+          "d": "M870,293 L920,293",
+          "fill": "none",
+          "stroke": "#64748b",
+          "stroke_width": 1.8,
+          "marker_end": "url(#arrow)"
+        },
+        {
+          "kind": "rect",
+          "x": 753,
+          "y": 175,
+          "width": 54,
+          "height": 54,
+          "rx": 3,
+          "fill": "#e8eef8",
+          "stroke": "#849bc0",
+          "stroke_width": 1
+        },
+        {
+          "kind": "rect",
+          "x": 748,
+          "y": 180,
+          "width": 54,
+          "height": 54,
+          "rx": 3,
+          "fill": "#e8eef8",
+          "stroke": "#849bc0",
+          "stroke_width": 1
+        },
+        {
+          "kind": "rect",
+          "x": 743,
+          "y": 185,
+          "width": 54,
+          "height": 54,
+          "rx": 3,
+          "fill": "#e8eef8",
+          "stroke": "#849bc0",
+          "stroke_width": 1
+        },
+        {
+          "kind": "rect",
+          "x": 738,
+          "y": 190,
+          "width": 54,
+          "height": 54,
+          "rx": 3,
+          "fill": "#e8eef8",
+          "stroke": "#849bc0",
+          "stroke_width": 1
+        },
+        {
+          "kind": "rect",
+          "x": 920,
+          "y": 250,
+          "width": 170,
+          "height": 86,
+          "rx": 12,
+          "fill": "#efedf8",
+          "stroke": "#cbd5e1",
+          "stroke_width": 1
+        },
+        {
+          "kind": "rect",
+          "x": 920,
+          "y": 262,
+          "width": 4,
+          "height": 62,
+          "fill": "#6860a5",
+          "rx": 2
+        },
+        {
+          "kind": "text",
+          "x": 937,
+          "y": 277,
+          "text": "Classifier",
+          "font_size": 17,
+          "fill": "#0f172a",
+          "font_weight": 700
+        },
+        {
+          "kind": "text",
+          "x": 937,
+          "y": 300,
+          "text": "One logit",
+          "font_size": 13,
+          "fill": "#475569",
+          "font_weight": 400
+        },
+        {
+          "kind": "rect",
+          "x": 973,
+          "y": 175,
+          "width": 54,
+          "height": 54,
+          "rx": 3,
+          "fill": "#e8eef8",
+          "stroke": "#849bc0",
+          "stroke_width": 1
+        },
+        {
+          "kind": "rect",
+          "x": 968,
+          "y": 180,
+          "width": 54,
+          "height": 54,
+          "rx": 3,
+          "fill": "#e8eef8",
+          "stroke": "#849bc0",
+          "stroke_width": 1
+        },
+        {
+          "kind": "rect",
+          "x": 963,
+          "y": 185,
+          "width": 54,
+          "height": 54,
+          "rx": 3,
+          "fill": "#e8eef8",
+          "stroke": "#849bc0",
+          "stroke_width": 1
+        },
+        {
+          "kind": "rect",
+          "x": 958,
+          "y": 190,
+          "width": 54,
+          "height": 54,
+          "rx": 3,
+          "fill": "#e8eef8",
+          "stroke": "#849bc0",
+          "stroke_width": 1
+        },
+        {
+          "kind": "rect",
+          "x": 40,
+          "y": 385,
+          "width": 620,
+          "height": 125,
+          "rx": 16,
+          "fill": "#f1f5f9",
+          "stroke": "#dde5ed",
+          "stroke_width": 1
+        },
+        {
+          "kind": "text",
+          "x": 60,
+          "y": 413,
+          "text": "EACH CONVOLUTIONAL BLOCK",
+          "font_size": 12,
+          "fill": "#475569",
+          "font_weight": 700
+        },
+        {
+          "kind": "text",
+          "x": 65,
+          "y": 441,
+          "text": "3 × 3 convolution → batch norm → ReLU → max pool",
+          "font_size": 18,
+          "fill": "#0f172a",
+          "font_weight": 400
+        },
+        {
+          "kind": "rect",
+          "x": 690,
+          "y": 385,
+          "width": 390,
+          "height": 125,
+          "rx": 16,
+          "fill": "#f1f5f9",
+          "stroke": "#dde5ed",
+          "stroke_width": 1
+        },
+        {
+          "kind": "text",
+          "x": 710,
+          "y": 413,
+          "text": "HEAD",
+          "font_size": 12,
+          "fill": "#475569",
+          "font_weight": 700
+        },
+        {
+          "kind": "text",
+          "x": 715,
+          "y": 441,
+          "text": "Flatten → dropout 0.3 → linear",
+          "font_size": 18,
+          "fill": "#0f172a",
+          "font_weight": 400
+        },
+        {
+          "kind": "text",
+          "x": 40,
+          "y": 551,
+          "text": "224,769 parameters · Weighted BCE with logits · AdamW",
+          "font_size": 18,
+          "fill": "#0f766e",
+          "font_weight": 700
+        },
+        {
+          "kind": "line",
+          "x1": 40,
+          "y1": 575,
+          "x2": 1080,
+          "y2": 575,
+          "stroke": "#dbe3ec"
+        },
+        {
+          "kind": "text",
+          "x": 40,
+          "y": 602,
+          "text": "253 images; 202 training / 51 validation. Architecture and threshold selection share the validation split.",
+          "font_size": 12,
+          "fill": "#475569",
+          "font_weight": 400
+        }
+      ]
+    }
+  ],
+  "plots": [
+    {
+      "kind": "confusion",
+      "filename": "validation-matrix.svg",
+      "eyebrow": "Brain MRI / exploratory image-level validation",
+      "title": "30 of 31 tumor-present images identified",
+      "subtitle": "51 validation images | AnyNet256 | selected threshold 0.282",
+      "matrix": [
+        [
+          15,
+          5
+        ],
+        [
+          1,
+          30
+        ]
+      ],
+      "labels": [
+        "No tumor",
+        "Tumor present"
+      ],
+      "footnote": "Architecture and threshold were selected on this split. These results are not clinical validation.",
+      "source": "Source: notebook.ipynb, saved confusion matrix output. Research use only."
+    }
+  ]
+}
